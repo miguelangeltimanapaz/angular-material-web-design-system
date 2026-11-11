@@ -1,0 +1,42 @@
+<main class="pagina">
+  <header class="encabezado">
+    <p class="etiqueta">Angular 22 + Material Web</p>
+
+    <h1>Mi sistema de diseño</h1>
+
+    <p class="descripcion">
+      Primera versión: botón filled reutilizable.
+    </p>
+  </header>
+
+  <section class="tarjeta">
+    <h2>Botón normal</h2>
+
+    <p>
+      Este componente Angular usa internamente
+      <code>md-filled-button</code>.
+    </p>
+
+    <ds-button label="Guardar cambios"></ds-button>
+  </section>
+
+  <section class="tarjeta">
+    <h2>Botón deshabilitado</h2>
+
+    <ds-button
+      label="No disponible"
+      [disabled]="true"
+    ></ds-button>
+  </section>
+
+  <section class="tarjeta">
+    <h2>Botón con acción</h2>
+
+    <p>Has hecho clic {{ contador() }} veces.</p>
+
+    <ds-button
+      label="Incrementar"
+      (click)="incrementar()"
+    ></ds-button>
+  </section>
+</main>
