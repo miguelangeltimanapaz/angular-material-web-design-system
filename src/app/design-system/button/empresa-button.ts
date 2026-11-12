@@ -7,7 +7,7 @@ import {
 import '@material/web/button/filled-button.js';
 
 @Component({
-  selector: 'ds-button',
+  selector: 'empresa-button',
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   template: `
@@ -26,7 +26,7 @@ import '@material/web/button/filled-button.js';
     }
   `,
 })
-export class DsButtonComponent {
+export class EmpresaButtonComponent {
   /** Texto visible del botón. */
   readonly label = input('Botón');
 

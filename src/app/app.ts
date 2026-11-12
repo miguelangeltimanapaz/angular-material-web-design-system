@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 
-import { DsButtonComponent } from './design-system/button/ds-button';
+import { EmpresaButtonComponent } from './design-system/button/empresa-button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [DsButtonComponent],
+  imports: [EmpresaButtonComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
