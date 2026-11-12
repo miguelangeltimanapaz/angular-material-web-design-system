@@ -3,6 +3,8 @@
 
   --md-sys-color-primary: #6750a4;
   --md-sys-color-on-primary: #ffffff;
+  --md-ref-typeface-brand: Roboto, Arial, sans-serif;
+  --md-ref-typeface-plain: Roboto, Arial, sans-serif;
 }
 
 * {

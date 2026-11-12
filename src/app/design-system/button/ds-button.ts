@@ -14,7 +14,9 @@ import '@material/web/button/filled-button.js';
     <md-filled-button
       type="button"
       [disabled]="disabled()"
+      [hasIcon]="hasIcon()"
     >
+      <ng-content select="[slot=icon]" />
       {{ label() }}
     </md-filled-button>
   `,
@@ -30,4 +32,7 @@ export class DsButtonComponent {
 
   /** Indica si el botón está deshabilitado. */
   readonly disabled = input(false);
+
+  /** Muestra un ícono inicial proyectado con `slot="icon"`. */
+  readonly hasIcon = input(false);
 }
